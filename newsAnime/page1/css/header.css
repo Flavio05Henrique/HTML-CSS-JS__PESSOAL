@@ -1,0 +1,12 @@
+@import url(headerSlider.css);
+@import url(headerNavBar.css);
+
+
+:root {
+    --cor-1: rgb(160, 4, 250);
+    --cor-2:rgb(177, 0, 168);
+    --cor-3: rgb(184, 184, 184);
+}
+
+
+

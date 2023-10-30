@@ -1,0 +1,47 @@
+.deleta_confirma_container{
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    " . . . ."
+    ". titulo titulo ."
+    ". bntSim bntNao ."
+    ". . . .";
+    border: 1px solid black;
+}
+
+.deleta_confirma_container > h4{
+    grid-area: titulo;
+    font-size: 5rem;
+    border-bottom: 2px solid var(--cor-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bnt_deleta_confirma, .deleta_confirma_fechar_bnt{
+    margin: 30px auto;
+    background-color: var(--cor-3);
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+}
+
+.bnt_deleta_confirma:hover, .deleta_confirma_fechar_bnt:hover{
+    transition: .1s;
+    border: 3px solid var(--cor-selecao);
+    color: var(--cor-selecao);
+}
+
+.bnt_deleta_confirma{
+    grid-area: bntSim;
+}
+
+.deleta_confirma_fechar_bnt{
+    grid-area: bntNao;
+}

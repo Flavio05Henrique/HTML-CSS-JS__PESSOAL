@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100%;
+    max-width: 2000px;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(235, 190, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game_screen {
+    width: 480px;
+    height: 480px;
+    background-color: rgb(63, 51, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
+    position: relative;
+}
+
+.bloco {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(137, 43, 226);
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.bloco_slide {
+    position: absolute;
+    transition: .5s;
+}
+
+.score_screen > h3 {
+    font-size: 2rem;
+}
+
+.score_screen > p {
+    background-color: rgb(151, 85, 182);
+    color: white;
+    font-size: 4rem;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.x0{
+    background-color: rgba(144, 196, 216, 0.507);
+}
+
+.x2{
+    background-color: rgb(103, 119, 211);
+}
+
+.x4{
+    background-color: rgb(113, 75, 218);
+}
+
+.x8{
+    background-color: rgb(173, 47, 212);
+}
+
+.x16{
+    background-color: rgb(183, 39, 196);
+}
+
+.x32{
+    background-color: rgb(196, 39, 162);
+}
+
+.x64{
+    background-color: rgb(196, 39, 118);
+}
+
+.x128{
+    background-color: rgb(196, 39, 65);
+}
+
+.x256{
+    background-color: rgb(196, 70, 39);
+}
+
+.x512{
+    background-color: rgb(196, 123, 39);
+}
+
+.x1024{
+    background-color: rgb(236, 233, 39);
+}
+
+footer {
+    width: 100%;
+    max-width: 2000px;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(107, 62, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minha_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minha_logo > p {
+    font-size: 2rem;
+}
+
+.lose_mensagem_container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.lose_mensagem {
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lose_mensagem p {
+    font-size: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(cadastrar.css);
+@import url(informacaoDeErro.css);
+@import url(addImagem.css);
+@import url(tagCriador.css);
+@import url(formDeltaConfirma.css);
+@import url(imagemFullScreen.css);
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+/*font-family: 'Oxygen', sans-serif;*/
+
+:root {
+    --cor-1: rgb(241, 241, 241);
+    --cor-2: rgb(97, 97, 97);
+    --cor-3: rgb(209, 209, 209);
+    --cor-4: #357fb8;
+    --cor-5: #0063af;
+    --cor-6: #0053a0;
+    --cor-7: rgb(209, 209, 209);
+    --cor-8: #3b8331;
+    --cor-selecao: rgb(216, 102, 102);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.centraliza_pagina {
+    width: 80vw;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.img_clicavel{
+    cursor: pointer;
+}
+
+

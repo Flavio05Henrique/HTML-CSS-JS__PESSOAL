@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*font-family: 'Maven Pro', sans-serif;
+font-family: 'Patrick Hand', cursive;*/
+
+
+.area_pedidos {
+    width: 675px;
+    margin: 20px auto;
+    background-color: rgb(252, 143, 71);
+    border-radius: 15px 0 0 15px;
+}
+
+form {
+    padding: 9px 0 0 0;
+    margin: 0 6px 0 7px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+form label, form input, textarea {
+    display: block;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: left;
+    color: white;
+    margin-top: 3px;
+}
+
+form label {
+    font-size: 1.3em;
+    font-weight:  bold;
+}
+
+form input {
+    padding: 3px;
+}
+
+.inputPadrao {
+    font-size: 18px;
+    width: 347px;
+    border: 1px solid black;
+}
+
+textarea {
+    border: 1px solid black;
+    padding: 3px 3px 0 3px;
+}
+
+.area_pedidos img {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+}
+
+.enviar {
+    font-size: 1.4em;
+    padding: 4px;
+    background-color: rgb(143, 221, 143);
+    margin: 15px auto;
+    font-family: 'Maven Pro', sans-serif;
+    border-radius: 3px;
+    transition: 0.5s all;
+}
+
+.enviar:hover {
+    background-color: rgb(48, 211, 48);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+
+    .area_pedidos {
+        width: 370px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    form{
+        margin: 0;
+    }
+
+    .area_pedidos img {
+        display: none;
+    }
+    
+    
+    
+}

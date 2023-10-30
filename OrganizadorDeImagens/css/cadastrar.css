@@ -1,0 +1,98 @@
+.fundo_black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    width: 98.8vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: fixed;
+    z-index: 10;
+}
+
+.cadastro_container {
+    width: 500px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 5%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.cadastro_fechar {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    font-size: 3rem;
+    position: absolute;
+    top: -15px;
+    left: 460px;
+}
+
+.cadastro_fechar:active {
+    transition: .2s;
+    width: 45px;
+    height: 45px;
+    font-size: 2.5rem;
+    background-color: var(--cor-selecao);
+}
+
+.cadastro_titulo {
+    font-size: 2.8rem;
+}
+
+.cadastro {
+    max-width: 500px;
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.cadastro_instrucao {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: var(--cor-2);
+}
+
+.bnt_cadastrar {
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: .5rem;
+    background-color: var(--cor-2);
+    color: var(--cor-3);
+    border: none;
+    border-radius: 5px;
+}
+
+.bnt_cadastrar:active {
+    transition: .2s;
+    margin: 4.6px auto;
+    padding: 3px;
+    font-size: 1.5rem;
+    background-color: var(--cor-selecao);
+}
+
+.senhoOuNomeErrado {
+    color: var(--cor-selecao);
+    animation: .5s animacaoErro;
+}
+
+.alerta_cadastro_existe{
+    color: var(--cor-selecao);
+    animation: .5s animacaoErro;
+}
+
+@keyframes animacaoErro {
+    0%{transform: translateX(0px);}
+    20%{transform: translateX(15px);}
+    40%{transform: translateX(0px);}
+    60%{transform: translateX(15px);}
+    80%{transform: translateX(0px);}
+    100%{transform: translateX(15px);}
+}

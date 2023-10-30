@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*font-family: 'Maven Pro', sans-serif;
+font-family: 'Patrick Hand', cursive;*/
+
+main {
+    background-color: rgb(160, 224, 160);
+    padding: 50px 0;
+}
+
+.container_produtos {
+    max-width: 940px;
+    background-color: #FFA743;
+    margin: auto;
+    padding-bottom: 18px;
+}
+
+.container_produtos ul {
+    text-align: center;
+}
+
+.container_produtos li {
+    display: inline-block;
+    height: 220px;
+    width: 21%;
+    padding: 20px 10px;
+    margin: 15px 5px 0px 5px;
+    text-align: center;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 15px;
+}
+
+.container_produtos img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.container_produtos p, h3 {
+    background-color: white;
+    margin: 0 -10px ;  
+    padding: 10px 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container_produtos p {
+    border-radius: 0 0 15px 15px;
+}
+
+.container_produtos h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media screen and (max-width:  840px){
+    
+    .container_produtos li {
+        height: 320px;
+        width: 40%;
+    }
+
+    .container_produtos img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .container_produtos li {
+        height: 220px;
+    }
+
+    .container_produtos img {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+

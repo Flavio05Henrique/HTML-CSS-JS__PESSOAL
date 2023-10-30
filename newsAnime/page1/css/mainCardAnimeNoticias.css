@@ -1,0 +1,56 @@
+.post_anime_noticias {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px;
+    align-items: center;
+    justify-items: center;
+}
+
+.post_anime_noticia {
+    width: 95%;
+    height: 95%;
+}
+
+.img_noticia {
+    width: 100%;
+}
+
+.titulo_noticia {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.noticia_altor {
+    display: inline-block;
+    color: var(--cor-main-card-2);
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.noticia_resumo {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.ver_noticia_completa {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: var(--cor-main-7);
+    border-radius: 0 30px 30px 0;
+}
+
+.ver_noticia_completa:hover {
+    transition: .5s;
+    color: white;
+    background-color: var(--cor-main-3);
+}

@@ -1,0 +1,22 @@
+.erro_nao_logado {
+    width: 500px;
+    height: 200px;
+    background-color: var(--cor-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.erro_nao_logado p {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--cor-3);
+}
+
+.erro_nao_logado a {
+    font-size: 1.5rem;
+    color: var(--cor-selecao);
+    text-decoration: none;
+}

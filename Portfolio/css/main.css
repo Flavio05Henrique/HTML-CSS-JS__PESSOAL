@@ -1,0 +1,156 @@
+main {
+    width: 69vw;
+    height: 100%;
+    background-color: rgb(187, 186, 186);
+    margin-left: 30.2%;
+}
+
+h2 {
+    font-size: 2em;
+    
+}
+
+p {
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+main > section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sobreMin, .skill, .meusProjetos, .projetosDeCursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divSobreMinBg, .divSkillBg, .projetoBg  {
+    width: 70%;
+    min-height: 40%;
+    padding: 15px;
+    background-color: rgba(16, 54, 226, 0.473);
+    box-shadow: -10px 10px black;
+}
+
+.tituloSkill {
+    position: relative;
+    top: -30px;
+    width: 100px;
+    text-align: center;
+    padding: 6px;
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+    z-index: 0;
+}
+
+.alinhaConteudoSkill {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.alinhaConteudoSkill > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoHTML, .logoCSS, .logoJS {
+    width: 80%;
+    padding: 30px;
+    border-radius: 100px;
+    background-color: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.logoIMG {
+    width: 90%;
+}
+
+.logoTitulo {
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+    padding: 2px 0;
+    position: relative;
+    top: -36px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.meusProjetos, .projetosDeCursos {
+    flex-direction: column;
+}
+
+.projetoContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.meusProjetosTitulo {
+    margin:30px 0; 
+    background-color: var(--cor-1);
+    width: 100%;
+    color: var(--cor-2);
+    text-align: center;
+}
+
+.iconGitHub {
+    width: 200px;
+    margin: 30px 0;
+}
+
+.projetoBg {
+    margin-left: 15px;
+    width: 90%;
+    box-shadow: none;
+}
+
+.projetoBg > img {
+    width: 100%;
+}
+
+.projetoDescricao {
+    background-color: var(--cor-4);
+    max-width: 500px;
+    min-height: 150px;
+    padding: 5px;
+    text-align: justify;
+    position: absolute;
+    top: 580px;
+    left: 460px;
+}
+
+.logoGitHub {
+    opacity: 20%;
+    width: 80px;
+    position: absolute;
+    top: 680px;
+    left: 890px;
+    background-color: var(--cor-2);
+    padding: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.logoGitHub:hover {
+    transition: .5s;
+    opacity: 100%;
+    width: 100px;
+}

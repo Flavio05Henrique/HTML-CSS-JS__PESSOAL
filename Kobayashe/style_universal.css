@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --cor0: black;
+    --cor1: white;
+    --cor3: #4fa934;
+    --cor4: #fe9a00;
+    --cor5: #905cbb;
+    --cor6: #3ecf6f;
+    --cor7: #471372;
+    
+
+    --font0: 'Lobster', Arial, Helvetica, sans-serif ;
+    --font1: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: var(--font1);
+}

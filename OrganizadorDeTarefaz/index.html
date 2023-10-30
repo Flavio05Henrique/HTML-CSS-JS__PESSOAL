@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador Inteligente</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imgs/marcaEuFiz.png" alt="Marca do autor" class="marcaEuCriei">
+            <p>Flavio</p>
+        </div>
+    </header>
+
+    <div class="cria_tarefa_exemplo"> 
+        <div class="form_fundo">
+            <form data-form>
+                <h1>Crie sua Tarefa</h1>
+                <div class="nome_tarefa">
+                    <label for="nome_da_tarefa">Nome da tarefa</label>
+                    <input type="text" id="nome_da_tarefa" name="nome_da_tarefa">
+                </div>
+                <div class="dia_hora">
+                    <label for="dia_hora">Dia/hora</label>
+                    <input type="text" id="dia_hora" name="dia_hora">
+                </div>
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <input type="submit" value="criar" id="criar">
+            </form>
+        </div>
+        <div class="centraliza_cartao">
+            <div class="cartao_container">
+                <h2>Exemplo :</h2>
+                <div class="header cor_1_1"><button class="fechar botaoStilo"><button class="tarefaComcluida botaoStilo"></button></div>
+                <div class="body cor_2_1">
+                    <h1>Nome da tarefa</h1>
+                    <h2>descrição :</h2>
+                    <div class="fundo_informacoes">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam est accusantium, explicabo, ducimus sequi</p>
+                        <p class="hora">dia : segunda 15H</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explicacao">
+        </div>
+    </div>
+
+    <div class="moudura">
+        <ul data-lista></ul>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

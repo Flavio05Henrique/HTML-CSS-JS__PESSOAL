@@ -1,0 +1,33 @@
+@import url(header.css);
+@import url(nav.css);
+@import url(main.css);
+
+:root {
+    --cor-1: rgb(34, 31, 31);
+    --cor-2: rgb(255, 255, 255);
+    --cor-3: rgba(0, 0, 0, 0);
+    --cor-4: rgb(68, 68, 68);
+    --cor-5: rgba(9, 103, 243, 0.671);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-2);
+}
+
+
+

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/*font-family: 'Maven Pro', sans-serif;
+font-family: 'Patrick Hand', cursive;*/
+
+section {   
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.fruta_um_home {
+background-color: rgb(231, 61, 61);
+}
+
+section .container  {
+    max-width: 940px;
+    height: 400px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.fruta_um_home .container {
+    background-color: rgb(231, 61, 61);
+}
+
+section .texto {
+    display: inline-block;
+    width: 36%;
+    vertical-align: top;
+    margin: 10% 0;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+section .img {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.fruta_dois_home {
+    background-color: rgb(255, 187, 0);
+}
+
+.fruta_dois_home img {
+    max-width: 400px;
+}
+
+.fruta_tres_home {
+    background-color: rgb(255, 81, 0);
+}
+
+.fruta_tres_home img {
+    max-width: 360px;
+}
+
+.fruta_quatro_home {
+    background-color: rgb(132, 0, 255);
+}
+
+.fruta_quatro_home .img {
+    margin: 65px 0;
+}
+
+.fruta_quatro_home img {
+    width: 330px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    section .container {
+        padding: 10px 0 0 0;
+        height: 500px;
+    }
+
+    section .texto {
+        display: block;
+        width: 75%;
+        margin: 30px auto;
+    }
+
+    section .img {
+        display: block;
+        width: auto;
+    }
+
+    section .img img {
+        width: 47%;
+    }
+
+    .fruta_dois_home .img {
+        margin: 20px 0 0 0;
+    }
+
+    .fruta_quatro_home .img {
+        margin: 37px 0 0 0;
+    }
+}

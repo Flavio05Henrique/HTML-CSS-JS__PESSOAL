@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Save | Image</title>
+    <link rel="shortcut icon" href="imgs/icons/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-body>
+    <header>
+        <div class="centraliza_pagina login_container login_on altera_login_container">
+            <label  for="carrega_img_perfil" class="img_usuario input_img_usuario" data-img-usuario>
+                <input type="file" accept="image/*" id="carrega_img_perfil" data-carrega-img-perfil>
+            </label>
+            <div class="flex_end" data-usuario-nome-container>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="add_container add_container_open">
+            <section class="add_sua_imagem centraliza_pagina open_add_sua_imagem" data-add-itens-contaner>
+                <button class="btn_add_imagem" type="button" data-add-imagem></button>
+                <div class="exemplos_cards">
+                    <video class="video" autoplay loop>
+                        <source src="videos/addImagem.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </div>
+        <div class="linha">
+            <button class="close_add_container_bnt close_add_container_bnt_open" data-close-add-container></button>
+        </div>
+        <div class="suas_imagens_container" >
+            <section >
+                <form class="pesquisa_imagem_container" data-pesquisa-imagem-container>
+                    <label for="pesquisa_imagem" class="pesquisa_imagem_label">Pesquisa de imagens por tags</label>
+                    <input type="search" id="pesquisa_imagem" class="pesquisa_imagem" placeholder=">>> Pesquisa por tag <<<" data-input-filtra-imagens name="input pesquisa imagem">
+                    <button type="button" class="reseta_filtro" title="reset" data-reset-filtro>X</button>
+                </form>
+                <div class="imagens suas_imagens" data-suas-imagens></div>
+            </section>
+        </div>
+
+         <div data-container-form>
+            
+         </div>
+    </main>
+    
+    <footer>
+        <a href="https://github.com/Flavio05Henrique/Pessoal/tree/main/MeusProjetos/HTML-CSS-JS/OrganizadorDeImagens" target="_blank"><img src="imgs/logo/marcaEuFiz.png" alt="pixel art do criador do site" class="logo_flavio" title="link do projeto"></a>
+        <p>Flavio henrique</p>
+    </footer>
+
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/addImagem.js"></script>
+    <script src="js/picturesCardsFunctions.js"></script>
+    <script src="js/userInformation.js"></script>
+    <script src="js/seeImageFullScreen.js"></script>
+    <script src="js/pesquisa.js"></script>
+    <script src="js/outrasFunções.js"></script>
+</body>
+
+</html>

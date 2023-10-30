@@ -1,0 +1,10 @@
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-6);
+    color: white;
+}
+
+.logo_flavio {
+    max-width: 90px;
+}

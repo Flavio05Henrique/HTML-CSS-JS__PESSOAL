@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+p{
+    max-width: 750px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+h1{
+    text-shadow: rgba(0, 0, 0, 0.315) 6px 6px 10px;
+}
+
+h2{
+    max-width: 550px;
+    margin: auto;
+    margin-top: 20px;
+    color: var(--cor3);
+}
+
+h3{
+    max-width: 750px;
+    margin: auto;
+    margin-top: 20px;
+}

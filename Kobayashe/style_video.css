@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.video {
+    position: relative;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: auto;
+    padding: 20px 20px 40% 20px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

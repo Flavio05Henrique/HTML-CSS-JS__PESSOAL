@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+    --font-titulo:'Pacifico', cursive;
+    --font-textos: 'Caveat', cursive;
+    --font-padrao:'Mulish', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imgs/fundoTexturaMesa.jpg);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #397496;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+header > div {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.marcaEuCriei {
+    width: 60px;
+    height: 60px;
+}
+
+.cria_tarefa_exemplo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.form_fundo {
+    background-image: url(../imgs/fundoPrancheta2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+
+form {
+    width: 500px;
+    font-family: var(--font-padrao);
+    vertical-align: top;   
+    position: absolute;
+    top: 210px;
+    left: 105px;
+}
+
+label {
+    display: block;
+}
+
+.nome_tarefa{
+    display: inline-block;
+    width: 70%;
+}
+
+.dia_hora {
+    display: inline-block;
+    width: 25%;
+}
+
+#nome_da_tarefa {
+    width: 70%;
+}
+
+#dia_hora {
+    width: 100%;
+}
+
+#descricao {
+    width: 100%;
+    height: 100px;
+}
+
+textarea {
+    resize: none;
+}
+
+#criar {
+    font-family: var(--font-titulo);
+    font-size: 2em;
+    background-color: white;
+    border: none;
+}
+
+#criar:hover {
+    cursor: pointer;
+}
+
+.centraliza_cartao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: justify;
+}
+
+.cartao_container {
+    margin: 15px;
+    width: 300px;
+    height: 315;
+}
+
+.cartao_container > h2 {
+    color: rgb(247, 247, 247);
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(22, 37, 104);
+}
+
+.cor_1_1{
+    background-color: rgb(22, 37, 104);
+}
+
+h1, h2, p {
+    padding: 5px;
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-family: var(--font-titulo);
+    font-weight: 100;
+    color: rgb(41, 5, 75);
+}
+
+.fundo_informacoes {
+    margin: 10px;
+    background-color: rgb(228, 253, 0);
+}
+
+p {
+    font-family: var(--font-titulo);
+    font-weight: 100;
+}
+
+.hora {
+    color: rgb(216, 55, 15);
+}
+
+.botaoStilo {
+    border-radius: 100px;
+    min-width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    border: none;
+}
+
+.fechar {
+    background-color: rgb(255, 19, 2); 
+}
+
+.fechar_transicao {
+    transition: 0.6s;
+    opacity: 0%;
+}
+
+.tarefaComcluida {
+    background-color: rgb(74, 255, 2);
+    font-size: 0.8em;
+    padding: 0 3px;
+    transition: .6s;
+}
+
+.tarefaComcluidaTransicao {
+    transition: .6s;
+    margin-left: 75%;
+}
+
+.fechar:hover, .tarefaComcluida:hover {
+    cursor: pointer;
+}
+
+
+.body {
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgb(95, 93, 175)
+}
+
+.cor_2_1 {
+    background-color: rgb(95, 93, 175);   
+}
+
+
+.moudura {
+    max-width: 1420px;
+    padding: 10px;
+    background-color: rgb(85, 40, 10);
+    margin: auto;
+}
+
+ul {
+    max-width: 1400px;
+    margin: auto;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url(../imgs/fundoMDF.jpg);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.432);
+    min-height: 366px;
+}

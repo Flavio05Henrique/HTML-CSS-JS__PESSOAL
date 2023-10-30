@@ -1,0 +1,112 @@
+@font-face {
+    font-family: game pixel;
+    src: url(../fonts/Minecraft.ttf);
+}
+
+:root{
+    --cor-1:rgb(50, 175, 19);
+    --cor-2:rgb(78, 73, 73);
+    --cor-3:rgb(214, 15, 15);
+    --cor-4:rgb(61, 216, 23);
+    --cor-5:rgb(163, 76, 19);
+    --cor-6:rgb(56, 34, 19);
+    --font-game:   game pixel;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex_centraliza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-1);
+}
+
+.game_container{
+    width: 70vw;
+    height: 90vh;
+    background-color: var(--cor-2);
+}
+
+.game_screen{
+    width: 996px;
+    height: 696px;
+    background-color: var(--cor-2);
+    border: 3px solid var(--cor-1);
+    position: relative;
+}
+
+.comida{
+    width: 20px;
+    height: 20px;
+    background-color: var(--cor-3);
+    position: absolute;
+}
+
+.cobra{
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-4);
+    position: absolute;
+    top: 315px;
+    left: 615px;
+}
+
+.mensagens{
+    width: 100%;
+    height: 100%;
+}
+
+.mensagem{
+    width: 500px;
+    height: 200px;
+    background-color: var(--cor-6);
+    z-index: 10;
+    flex-direction: column;
+}
+
+.bnt_inicia{
+    height: 50px;
+    padding: 0 10px;
+    font-family: var(--font-game);
+    font-size: 30px;
+    background-color: var(--cor-5);
+    border: none;
+    animation: 1s infinite alternate bntAnimado;
+}
+
+@keyframes bntAnimado{
+    0%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 20px;
+    }
+}
+
+.game_over{
+    font-size: 40px;
+    font-family: var(--font-game);
+}
+
+.score{
+    font-family: var(--font-game);
+    font-size: 40px;
+    position: absolute;
+    opacity: 50%;
+    top: 15px;
+    left: 15px;
+}

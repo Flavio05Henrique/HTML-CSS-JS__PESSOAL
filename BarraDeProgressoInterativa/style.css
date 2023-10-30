@@ -1,0 +1,98 @@
+:root {
+    --cor1: #D9B777;
+    --cor2: #400101;
+    --cor3: #BF4B4B;
+    --cor5: #00030D;
+
+    --controlWidth: 20px;
+    --controlHeight: 350px;
+    --pointSize: calc(var(--controlWidth) * 1.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 10px;
+    background: var(--cor1);
+    border-radius: 50px;
+    transform: rotate(180deg);
+}
+
+.bar {
+    width: var(--controlWidth);
+    height: var(--controlHeight);
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar_fill {
+    width: 100%;
+    height: 50%;
+    border-radius: 50px;
+    background-color: var(--cor3);
+}
+
+.point{
+    width: calc(var(--pointSize));
+    height: calc(var(--pointSize));
+    background-color: var(--cor2);
+    border-radius: 100%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar_mask {
+    cursor: pointer;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
+    border-radius: 50px;
+    /* background-color: rgba(245, 245, 220, 0.432); */
+    transform: translate(-50%);
+}
+
+/* não inportante */
+
+body {
+    background-color: #D95276;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    background-color: #BF4B4B;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.valueDemonstration {
+    display: inline-block;
+    background-color: #400101;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.valueDemonstration p {
+    font-size: 50px;
+    padding: 5px;
+    background-color: #D9B777;
+    color: #400101;
+    border-radius: 5px;
+}

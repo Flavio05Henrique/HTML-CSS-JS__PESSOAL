@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --fonte-padrao: 'Sono', sans-serif;
+    --cor-global-1: rgb(245, 245, 245);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-image:url(page1/imgs/totoroFundoBody.png);
+    background-color: var(--cor-global-1);
+} 
+
