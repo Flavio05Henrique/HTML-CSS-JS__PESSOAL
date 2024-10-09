@@ -33,14 +33,18 @@ const slidToTop = () => {
 }
 
 const animatedTextSlidToTop = () => {
-    slidPage == 0 ? animatedText.children[slidMaxPages].classList.remove("slider__applayTextAnimation") : 0
-    slidPage > 0 ? animatedText.children[slidPage -1].classList.remove("slider__applayTextAnimation") : 0
+    slidPage == 0 
+    ? animatedText.children[slidMaxPages].classList.remove("slider__applayTextAnimation") 
+    : animatedText.children[slidPage -1].classList.remove("slider__applayTextAnimation")
+
     animatedText.children[slidPage].classList.add("slider__applayTextAnimation")
 }
 
 const animatedSliderBntPlus = () => {
-    slidPage == 0 ? sliderPlusBnt.classList.remove(`slider--backgroundColor__pag${slidMaxPages +1}`) : 0
-    slidPage > 0 ? sliderPlusBnt.classList.remove(`slider--backgroundColor__pag${slidPage}`) : 0
+    slidPage == 0 
+    ? sliderPlusBnt.classList.remove(`slider--backgroundColor__pag${slidMaxPages +1}`) 
+    : sliderPlusBnt.classList.remove(`slider--backgroundColor__pag${slidPage}`) 
+    
     sliderPlusBnt.classList.add(`slider--backgroundColor__pag${slidPage +1}`)
 }
 
@@ -113,8 +117,8 @@ const animatedImgsSlidToTopClearAll = () => {
 }
 
 const clearTimeouts = () => {
-    timeOuts.forEach(e => {
-        clearTimeout(timeOuts[e]);
+    timeOuts.forEach((e, i )=> {
+        clearTimeout(timeOuts[i]);
     })
 }
 
